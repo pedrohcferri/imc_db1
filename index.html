@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="caixa_input">
+            <h2>Calcular o Índice de massa corporal (IMC)</h2>
+            <form>
+                <p>Insira sua idade:</p>
+                <input type="text" name="idade" id="idade" placeholder="Ex: 25">
+                <p>Peso (quilos):</p>
+                <input type="text" id="peso" name="peso" placeholder="Ex: 60.5"/>
+                <p>Altura (metros):</p>
+                <input type="number" id="altura" name="altura" step="0.01" placeholder="Ex: 1,75"/>
+                <input type="submit" value="Calcular" onclick="calcularIMC(event)" />        
+            </form>
+            <div class="campo_resultado" id="resultado">
+                <div class="container">
+                    <label class="campo_texto"></label>
+                </div>
+                <img src="imc_15748_l.webp" alt="referência imc" class="img_imc">
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="app.js" defer></script>
+</body>
+</html>
