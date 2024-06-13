@@ -1,14 +1,7 @@
 const banner = document.querySelector('.img_imc');   
 
 
-document.getElementById('meuForm').addEventListener('submit', function(event) {
-    var campoValor = document.getElementById('campo').value;
-    
-    if (campoValor.trim() === '') {
-        alert('Por favor, preencha o campo!');
-        event.preventDefault(); // Impede o envio do formulário
-        }
-        });
+
 
 function calcularIMC(event){
     
@@ -26,20 +19,26 @@ function calcularIMC(event){
     switch(true){
         case imc < 18.5:
             mensagem = "Você está abaixo do peso!";
-            imagem = "hulk.jpeg";
+            imagem = "./imagens/hulk.jpeg";
             break;
-            case imc < 24.9:
-                mensagem = "Você está com o peso na média!";
-                imagem = "mclove.jpg";
-                break;
-                case imc < 29.9:
-                    mensagem = "Você está com sobrepeso!";
-                    imagem = "thor.png";
-                    break;
-                    case imc >= 30:
-                        mensagem = "Você está acima do peso!";
-            imagem = "gordin.jpg";
+        case imc < 24.9:
+            mensagem = "Você está com o peso na média!";
+            imagem = "./imagens/mclove.jpg";
+            break;
+        case imc < 29.9:
+            mensagem = "Você está com sobrepeso!";
+            imagem = "./imagens/thor.png";
+            break;
+        case imc >= 30:
+            mensagem = "Você está acima do peso!";
+            imagem = "./imagens/gordin.jpg";
+            break
+        case imc !== NaN:
+            mensagem = "Você não digitou nada!";
+            imagem = "./imagens/imc_15748_l.webp";
+            break
 
+        
             
     }
  resultado.innerHTML = `
