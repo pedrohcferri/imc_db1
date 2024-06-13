@@ -11,14 +11,12 @@
     <main>
         <div class="caixa_input">
             <h2>Calcular o Índice de massa corporal (IMC)</h2>
-            <form>
-                <p>Insira sua idade:</p>
-                <input type="text" name="idade" id="idade" placeholder="Ex: 25">
+            <form id="meuform">
                 <p>Peso (quilos):</p>
-                <input type="text" id="peso" name="peso" placeholder="Ex: 60.5"/>
+                <input type="number" id="peso" name="peso" placeholder="Ex: 60.5"/>
                 <p>Altura (metros):</p>
-                <input type="number" id="altura" name="altura" step="0.01" placeholder="Ex: 1,75"/>
-                <input type="submit" value="Calcular" onclick="calcularIMC(event)" />        
+                <input type="number" id="altura" name="altura" step="0.01" placeholder="Ex: 1,75 faça o uso da vírgula."/>
+                <input type="submit" class="enviar" value="Calcular" onclick="calcularIMC(event)" />        
             </form>
             <div class="campo_resultado" id="resultado">
                 <div class="container">

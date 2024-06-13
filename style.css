@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
 }
 body{
     height: 100vh;
@@ -19,10 +19,10 @@ main{
     flex-direction: column;
     align-items: center;
     background-color:#84a58cf6;
-    overflow-y: auto;
+
     gap: 40%;
     justify-content: center;
-    box-sizing: border-box;
+   
 
 
 }
@@ -38,30 +38,41 @@ main{
     padding: 2% 3%;
     gap: 30px;    
     box-sizing: border-box;
-    flex: 1 1 200px;
+    overflow-x: auto;
+    
 }
 form{
     font-family: Arial;
-    color: #312a2a;
-    height: 50%;
+
+    height: 30%;
     width: 60%;
     display: flex;
     flex-direction: column;
     gap: 2px;
+    color: black;
+    font-size: larger;
     
 }
 .img_imc{
-    max-width: 60%;
-    height: auto;
-    display: block;
+    width: 55%;
+    height: 90%;
+    display: flex;
     
 }
 .campo_resultado{
     display: flex;
-    box-sizing: content-box;
+   
     width: 100%;
     height: 90%;
     gap: 10%;
     align-items: center;
+    overflow-x: auto;
     
+}
+.campo_texto{
+    color: black;
+    font-size: larger;
+    justify-content: center;
+    gap: 1px;
+    display: flex;
 }
